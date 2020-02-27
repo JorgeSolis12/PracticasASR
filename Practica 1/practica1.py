@@ -443,10 +443,10 @@ def documento(n_agente, na):
         a = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.1.0')
         b_aux = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.4.0')
         b = b_aux[27:]
-        f_aux = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.5.0')
+        f = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.5.0')
         c= b_aux[24:]
         d_aux = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.6.0')
-        d = d_qb_aux[28:]
+        d = d_aux[28:]
         e = consultaSNMPWindows(comunidad,ips[na_ips], '1.3.6.1.2.1.1.1.0') 
 
     w, h = A4

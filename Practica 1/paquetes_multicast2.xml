@@ -4,7 +4,7 @@
 <rrd>
 	<version>0003</version>
 	<step>60</step> <!-- Seconds -->
-	<lastupdate>1582835067</lastupdate> <!-- 2020-02-27 14:24:27 CST -->
+	<lastupdate>1582835810</lastupdate> <!-- 2020-02-27 14:36:50 CST -->
 
 	<ds>
 		<name> inoctets </name>
@@ -14,8 +14,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>4267777</last_ds>
-		<value>2.3592374634e+05</value>
+		<last_ds>2000870</last_ds>
+		<value>3.6197134787e+05</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -27,8 +27,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>4267777</last_ds>
-		<value>2.3592374634e+05</value>
+		<last_ds>2000870</last_ds>
+		<value>3.6197134787e+05</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -42,31 +42,19 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>8.6286843047e+03</primary_value>
+			<primary_value>8.4290701526e+03</primary_value>
 			<secondary_value>0.0000000000e+00</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>8.6286843047e+03</primary_value>
+			<primary_value>8.4290701526e+03</primary_value>
 			<secondary_value>0.0000000000e+00</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
-			<!-- 2020-02-27 04:25:00 CST / 1582799100 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:26:00 CST / 1582799160 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:27:00 CST / 1582799220 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:28:00 CST / 1582799280 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:29:00 CST / 1582799340 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:30:00 CST / 1582799400 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:31:00 CST / 1582799460 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:32:00 CST / 1582799520 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:33:00 CST / 1582799580 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:34:00 CST / 1582799640 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:35:00 CST / 1582799700 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 04:36:00 CST / 1582799760 --> <row><v>NaN</v><v>NaN</v></row>
 			<!-- 2020-02-27 04:37:00 CST / 1582799820 --> <row><v>NaN</v><v>NaN</v></row>
 			<!-- 2020-02-27 04:38:00 CST / 1582799880 --> <row><v>NaN</v><v>NaN</v></row>
 			<!-- 2020-02-27 04:39:00 CST / 1582799940 --> <row><v>NaN</v><v>NaN</v></row>
@@ -647,14 +635,26 @@
 			<!-- 2020-02-27 14:14:00 CST / 1582834440 --> <row><v>NaN</v><v>NaN</v></row>
 			<!-- 2020-02-27 14:15:00 CST / 1582834500 --> <row><v>NaN</v><v>NaN</v></row>
 			<!-- 2020-02-27 14:16:00 CST / 1582834560 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2020-02-27 14:17:00 CST / 1582834620 --> <row><v>7.6232131569e+03</v><v>7.6232131569e+03</v></row>
-			<!-- 2020-02-27 14:18:00 CST / 1582834680 --> <row><v>8.0977515319e+03</v><v>8.0977515319e+03</v></row>
-			<!-- 2020-02-27 14:19:00 CST / 1582834740 --> <row><v>8.0545320938e+03</v><v>8.0545320938e+03</v></row>
-			<!-- 2020-02-27 14:20:00 CST / 1582834800 --> <row><v>6.6148139551e+03</v><v>6.6148139551e+03</v></row>
-			<!-- 2020-02-27 14:21:00 CST / 1582834860 --> <row><v>6.5482874563e+03</v><v>6.5482874563e+03</v></row>
-			<!-- 2020-02-27 14:22:00 CST / 1582834920 --> <row><v>8.3935659933e+03</v><v>8.3935659933e+03</v></row>
-			<!-- 2020-02-27 14:23:00 CST / 1582834980 --> <row><v>8.9866833409e+03</v><v>8.9866833409e+03</v></row>
-			<!-- 2020-02-27 14:24:00 CST / 1582835040 --> <row><v>8.6286843047e+03</v><v>8.6286843047e+03</v></row>
+			<!-- 2020-02-27 14:17:00 CST / 1582834620 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:18:00 CST / 1582834680 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:19:00 CST / 1582834740 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:20:00 CST / 1582834800 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:21:00 CST / 1582834860 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:22:00 CST / 1582834920 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:23:00 CST / 1582834980 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:24:00 CST / 1582835040 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:25:00 CST / 1582835100 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:26:00 CST / 1582835160 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:27:00 CST / 1582835220 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:28:00 CST / 1582835280 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:29:00 CST / 1582835340 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:30:00 CST / 1582835400 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:31:00 CST / 1582835460 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:32:00 CST / 1582835520 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:33:00 CST / 1582835580 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:34:00 CST / 1582835640 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2020-02-27 14:35:00 CST / 1582835700 --> <row><v>9.8582484906e+03</v><v>9.8582484906e+03</v></row>
+			<!-- 2020-02-27 14:36:00 CST / 1582835760 --> <row><v>8.4290701526e+03</v><v>8.4290701526e+03</v></row>
 		</database>
 	</rra>
 </rrd>
