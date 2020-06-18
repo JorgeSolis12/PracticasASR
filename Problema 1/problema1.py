@@ -16,12 +16,11 @@ import matplotlib.pyplot as plt # Para crear gráficos con matplotlib
 from sklearn.linear_model import LinearRegression #Regresión Lineal con scikit-learn
 
 comunidad = "grupo4CV5"
-IP = "192.168.100.19"
+IP = "192.168.100.36"
 gh = 4.2
-not_val1 = True
-not_val2 =True
 
-def notificacion(name):
+
+def notificacion(name,not_val1,not_val2):
     if not_val1 == True:
         send_alert_attached("CPU Al 90%",name)
         not_val1 = False
@@ -35,18 +34,26 @@ def f(x):  # función f(x) = 0.1*x + 1.25 + 0.2*Ruido_Gaussiano
     y = 0.1*x + 1.25 + 0.2*np.random.randn(x.shape[0])
     return y
 def tarea_1():
-    print("Tarea1")
+    #print("Tarea1")
+
+    not_val1 = False
+    not_val2 =False
 
     carga_array = []
     y = 0
 
     for i in range(0,20):
-        carga = float(consultaSNMP(comunidad, IP, '1.3.6.1.4.1.2021.10.1.3.1'))
-        carga = (carga*100)/gh
+        carga = consultaSNMP(comunidad, IP, '1.3.6.1.4.1.2021.10.1.3.1')
+        carga2 = float(carga)
+        carga2 = (carga2*100)/gh
 
-        if carga == 90 or carga == 100:
-            notificacion("gráfico")
-        carga_array.append(carga) 
+        """if carga2 >= 90: 
+            not_val1 = True
+            notificacion("gráfico",not_val1,not_val2)
+        if carga2 <= 100:
+            not_val2 = True
+            notificacion("gráfico",not_val1,not_val2)"""
+        carga_array.append(carga2) 
 
     x = np.array(carga_array)
     y = f(x)
@@ -107,10 +114,10 @@ def tarea_2():
     begDate = endDate - 3600
 
     while 1:
-        carga = float(consultaSNMP(comunidad, IP, '1.3.6.1.4.1.2021.10.1.3.1'))
+        carga = int(float(consultaSNMP(comunidad, IP, '1.3.6.1.4.1.2021.10.1.3.1')))
         total_input_traffic  = (carga*100)/gh
 
-        valor = rrdtool.lastupdate(fname)+1 + str(total_input_traffic)
+        valor = str(rrdtool.lastupdate(fname))+ str(total_input_traffic)
         print (valor)
         ret = rrdtool.update(fname, valor)
         rrdtool.dump(fname,'pred.xml')
@@ -156,9 +163,18 @@ def tarea_2():
                         "LINE1:scaledupper#ff0000:Upper Bound Average bits in",
                         "LINE1:scaledlower#0000FF:Lower Bound Average bits in")
 
-    if carga == 90 or carga == 100:
-        notificacion("fname")
+    not_val1 = False
+    not_val2 = False
+    if carga >= 90: 
+        not_val1 = True
+        notificacion(fname,not_val1,not_val2)
     
+    
+    if carga >= 100: 
+        not_val1 = True
+        notificacion(fname,not_val1,not_val2)
+    
+
 def menu():
     n = int(input("¿Qué tarea desea observar?"))
 
